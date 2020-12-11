@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>     
+  <link href="/style.css" rel="stylesheet" type="text/css"/> 
+  <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
+  <title> Piecademy | Lexing & Parsing </title>
+</head>
+<body>
+
+
+  <h1> Basics </h1>
+  <p> Lexing and Parsing is the way to make computer programming languages. They actually tell the computer what to do which the computer then takes those instructions and executes them. When finished with the Lexing/Parsing, the computer then sends it to a interpreter or compiler, which then executes the code. Interpreted is usually slower than compiled, but it depends.</p>
+  <br>
+  <br>
+  <h2> Interpreted VS Compiled </h2>
+  <h3> Mini-Lesson </h3> 
+  <h3> Interpreted </h3>
+  <p>Here are some pros and cons of Interpreted langauges: 
+  Pros: <br> </p>
+  
+  <li>   Interpreted languages tend to be more high-level, meaning, easier for the humans to read. While low-level means it is easier for the computers to read. </li>
+  
+  <li> Interpreted languages can catch errors faster, and tell you about them, instead of having to recompile every time. </li>
+  </li>
+  <li> Interpreted Languages are usually better for beginners, even though some languages are better to learn before others. </li> 
+  <br>
+  Cons: 
+  <li> They are slow. </li> 
+  
+
+  <p> Compiled langauges are here: </p>
+  <p>Pros:</p> 
+  <li> Fast, super fast </li>
+  <li> Used for great languages </li> 
+  <p>Cons:</p> 
+  <li> Tend to be more low-level </li> 
+  <li> Cannot find errors as well as interpreters. </li> 
+  <br> 
+  <br> 
+  <h2> Back to lexing and parsing </h2>
+
+  <p> So we will start off with the topic lexing, because it comes first in the programming of a language. A Lexer, takes source code, and then lexes them down into a bunch of <b> tokens </b>. An example would be:<br>Source code:<br> </p>
+  <code> print("Hello, world!") </code> 
+  <p> After going through the <b> pre </b>-lexer it would be this: </p> 
+  <code> INITIALIZER "print"<br>OPEN_PAREN '('<br>DOUBLEQOUTE '"'<br>STRING "Hello, world!"<br>DOUBLEQOUTE '"'<br>CLOSED_PAREN ')' </code> 
+
+  <p> Then that would go to the lexer, saying: </p>
+  <code> INITIALZER "print"<br>OPEN_PAREN  '('<br> STRING "Hello, world!"<br>CLOSED_PAREN ')'</code>
+  <p> But you could also make an all in one lexer, which does the quote stuff like this(easier way): <br> Everything <b>after the "</b> is equal to a string,  and when a second " is called that is the end of the string.<br> The basic process: </p>
+  <br>
+  <code> src -> tokenizing/lexing -> parsing -> compiling/interpreting -> output(your screen/terminal) </code>
+  <p> Get it? Good. Because next is: </p>
+  
+  <h2> Parsing </h2>
+  <p> Parsing is Basically something that does <i>stuff</i> with the tokens. </p>
+
+  <h2> What <b> NOT </b> to do. </h2>
+  <p> Alrighty, if you are wanting to make a parser and lexer here is a Mini-Chapter for you: </p> 
+  <h3> Mini-Lesson Short Note If You Want to Make a Lexer or Parser. </h3> 
+
+  <p>Alrighty, I know what some of you beginners are thinking: "Why can't I just use if statements to lex through the code?" Well two reasons: </p>
+  <li> Its Bad Pracice - If your on this for college, it is horrid practice and won't introduce you into <i> real parsing and lexing </i> </li>
+  <br>
+  <li> It gets harder - It gets harder and harder as you go, like for example, how would you do functions in a if-else statement. 
+  
